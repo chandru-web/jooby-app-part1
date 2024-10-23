@@ -1,0 +1,113 @@
+.header-container {
+  background-color: darkgray;
+  padding: 10px 40px 10px 40px; /* Horizontal padding */
+  height: 12vh; /* Height for larger screens */
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    height: 8vh; /* Reduced height for smaller screens */
+    padding: 0 20px; /* Adjust horizontal padding for smaller screens */
+  }
+}
+
+.larger-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.website-logo {
+  height: auto; /* Allow height to adjust automatically */
+  max-height: 100%; /* Ensure it doesn't exceed header height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.nav-link-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  list-style-type: none;
+  margin-right: 15px; /* Space between nav links */
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 22px; /* Font size for nav links */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Specify the property for transition */
+}
+
+.nav-link:hover {
+  color: red; /* Change color on hover */
+}
+
+.logout-button {
+  background-color: #4f46e5;
+  color: #fff;
+  height: 40px; /* Fixed height for button */
+  width: 120px; /* Fixed width for button */
+  padding: 5px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-family: 'Roboto';
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.logout-button:hover {
+  background-color: darkblue; /* Change background on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.for-smaller-device {
+  display: none; /* Hidden by default */
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .larger-container {
+    display: none; /* Hide larger container on small screens */
+  }
+
+  .header-container {
+    padding: 10px; /* Adjust vertical padding for smaller screens */
+    height: auto; /* Allow height to adjust automatically based on content */
+  }
+
+  .website-logo {
+    max-height: calc(
+      8vh - (10px + 10px)
+    ); /* Adjust max-height based on header height and padding (top + bottom) */
+    width: auto; /* Maintain aspect ratio */
+  }
+
+  .for-smaller-device {
+    display: flex; /* Show smaller device layout when needed */
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px; /* Padding for smaller device layout */
+  }
+
+  .icons-container {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+  }
+
+  .button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+  }
+}

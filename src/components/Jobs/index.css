@@ -1,0 +1,26 @@
+.hr {
+  color: #fff;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-details {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-logo {
+  height: 100px;
+  width: 100px;
+}
+.profile-name {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}

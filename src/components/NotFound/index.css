@@ -1,0 +1,33 @@
+.not-found-container {
+  text-align: center;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.not-found-heading {
+  color: #f8fafc;
+  font-size: 24px;
+}
+
+.not-found-description {
+  color: #e2e8f0;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .not-found-heading {
+    font-size: 20px;
+  }
+
+  .not-found-description {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
